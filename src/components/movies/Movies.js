@@ -33,17 +33,17 @@ const Movies = ({
     setSearch(e.target.value);
     setPage(1);
   };
-  async function getMovies() {
-    const promises = movies.map(movie =>
-      axios.get(
-        `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=c154daad&plot=short`
-      )
-    );
-    const results = await Promise.all(promises);
-    setDetails(results.map(r => r.data));
-  }
 
   React.useEffect(() => {
+    async function getMovies() {
+      const promises = movies.map(movie =>
+        axios.get(
+          `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=c154daad&plot=short`
+        )
+      );
+      const results = await Promise.all(promises);
+      setDetails(results.map(r => r.data));
+    }
     getMovies();
   }, [movies]);
   return (
