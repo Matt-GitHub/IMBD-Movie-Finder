@@ -22,6 +22,8 @@ http://www.omdbapi.com/
 # What I Would Improve 
 1. Reusability of components
 2. Abstracting out components and logic
+3. Removing scroll bar from search
+4. Adding better ux to buttons and better visuals when an action is taken
 
 # Have any thoughts ?
 Message me at https://www.linkedin.com/in/matthew-bedard-dev/
