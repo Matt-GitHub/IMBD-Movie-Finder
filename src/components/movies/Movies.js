@@ -106,9 +106,9 @@ const Movies = ({
                     })}
                   </div>
                   <div className="movieRatingContainer">
-                    {movie.Ratings.map(data => {
+                    {movie.Ratings.map((data, key) => {
                       return (
-                        <div className="ratingContainer">
+                        <div className="ratingContainer" key={key}>
                           {data.Source.includes('Rotten') ? (
                             <span role="img" aria-label="tomato">
                               🍅

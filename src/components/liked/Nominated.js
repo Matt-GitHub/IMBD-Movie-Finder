@@ -13,10 +13,10 @@ const Nominated = ({ nominated, setNominated }) => {
       )}
       <div className="movieContainer">
         {nominated.length > 0 ? (
-          nominated.map(movie => {
+          nominated.map((movie, key) => {
             let genre = editString(movie.Genre);
             return (
-              <div className="movieBox">
+              <div className="movieBox" key={key}>
                 <img
                   className="moviePoster"
                   src={
