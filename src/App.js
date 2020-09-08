@@ -17,7 +17,7 @@ function App() {
   React.useEffect(() => {
     axios
       .get(
-        `http://www.omdbapi.com/?s=${search}&apikey=c154daad&type=movie&page=${page}`
+        `https://www.omdbapi.com/?s=${search}&apikey=c154daad&type=movie&page=${page}`
       )
       .then(res => {
         if (res?.data?.Search) {
