@@ -1,4 +1,4 @@
-## deployed link (https://shopify-shoppies-intern-app.netlify.app/)
+## deployed at (https://shopify-shoppies-intern-app.netlify.app/)
 
 ## Technology Used
 1. React
